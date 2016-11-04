@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="QDBPictureView">
+            <rect key="frame" x="0.0" y="0.0" width="289" height="200"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="71c-Fm-YqR"/>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="common-gif" translatesAutoresizingMaskIntoConstraints="NO" id="6RM-Ms-FKv">
+                    <constraints>
+                        <constraint firstAttribute="width" constant="31" id="9wJ-vl-Sqh"/>
+                        <constraint firstAttribute="height" constant="31" id="naj-nT-jAL"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" alpha="0.80000000000000004" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Us1-ga-sv4">
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="35" id="HLu-yR-SSW"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    <state key="normal" title="点击查看大图" image="see-big-picture">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="6RM-Ms-FKv" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="2P4-pu-tJZ"/>
+                <constraint firstItem="71c-Fm-YqR" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="3kB-3A-sqx"/>
+                <constraint firstAttribute="trailing" secondItem="Us1-ga-sv4" secondAttribute="trailing" id="GWw-iM-ty5"/>
+                <constraint firstItem="Us1-ga-sv4" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Jx4-pU-XlQ"/>
+                <constraint firstItem="71c-Fm-YqR" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="NWu-cZ-65T"/>
+                <constraint firstItem="6RM-Ms-FKv" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="PFb-bc-tFR"/>
+                <constraint firstAttribute="bottom" secondItem="Us1-ga-sv4" secondAttribute="bottom" id="Qht-1g-eUF"/>
+                <constraint firstAttribute="bottom" secondItem="71c-Fm-YqR" secondAttribute="bottom" id="S6j-5L-wGF"/>
+                <constraint firstAttribute="trailing" secondItem="71c-Fm-YqR" secondAttribute="trailing" id="Ttc-cN-0Kj"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="bgImageView" destination="71c-Fm-YqR" id="8mh-3H-3M7"/>
+                <outlet property="gitImageView" destination="6RM-Ms-FKv" id="vDg-om-2qN"/>
+                <outlet property="seeBigImagBtn" destination="Us1-ga-sv4" id="naF-Nw-E31"/>
+            </connections>
+            <point key="canvasLocation" x="-13.5" y="93"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="common-gif" width="31" height="31"/>
+        <image name="see-big-picture" width="19" height="19"/>
+    </resources>
+</document>

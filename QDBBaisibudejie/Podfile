@@ -1,0 +1,9 @@
+platform :ios, ’10.0’
+
+target 'QDBBaisibudejie' do
+  pod 'AFNetworking'
+  pod 'SVProgressHUD'
+  pod 'SDWebImage'
+  pod ‘MJRefresh’
+  pod ‘MJExtension’
+end

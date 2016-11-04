@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="QDBRecommendViewController">
+            <connections>
+                <outlet property="leftView" destination="NcD-BD-2Mc" id="bfX-qe-yRR"/>
+                <outlet property="rightTableView" destination="BNT-X7-xHr" id="McR-ev-GFN"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="NcD-BD-2Mc">
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="80" id="uxs-gl-6VL"/>
+                    </constraints>
+                </tableView>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="BNT-X7-xHr">
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="BNT-X7-xHr" firstAttribute="leading" secondItem="NcD-BD-2Mc" secondAttribute="trailing" id="8mo-2P-00w"/>
+                <constraint firstAttribute="bottom" secondItem="BNT-X7-xHr" secondAttribute="bottom" id="Dnh-jL-J0x"/>
+                <constraint firstAttribute="trailing" secondItem="BNT-X7-xHr" secondAttribute="trailing" id="Q7S-EN-olH"/>
+                <constraint firstItem="BNT-X7-xHr" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="SwT-R4-IPF"/>
+                <constraint firstItem="NcD-BD-2Mc" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="XCb-py-wmn"/>
+                <constraint firstItem="NcD-BD-2Mc" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="eMq-4J-3py"/>
+                <constraint firstAttribute="bottom" secondItem="NcD-BD-2Mc" secondAttribute="bottom" id="x1u-Qf-DXI"/>
+            </constraints>
+        </view>
+    </objects>
+</document>

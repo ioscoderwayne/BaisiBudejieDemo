@@ -1,0 +1,20 @@
+//
+//  PrefixHeader.pch
+//  QDBBaisibudejie
+//
+//  Created by weixiaoyang on 2016/10/24.
+//  Copyright © 2016年 weixiaoyang. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#import "UIView+Frame.h"
+#import "UIBarButtonItem+Extension.h"
+#import "Macro.h"
+#import "QDBConstant.h"
+#import "SVProgressHUD.h"
+#import "MJExtension.h"
+#import "NSDate+Extension.h"
+
+#endif /* PrefixHeader_pch */
