@@ -15,8 +15,11 @@
 		470AA7531DC2F8EC009EE1EC /* QDBRecommedTagCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 470AA7511DC2F8EC009EE1EC /* QDBRecommedTagCell.m */; };
 		470AA7541DC2F8EC009EE1EC /* QDBRecommedTagCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 470AA7521DC2F8EC009EE1EC /* QDBRecommedTagCell.xib */; };
 		473ABACF1DCB52250074A45A /* QDBTopicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 473ABACE1DCB52250074A45A /* QDBTopicViewController.m */; };
+		474249361DD056920015A7BD /* QDBShowBigImageVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 474249341DD056920015A7BD /* QDBShowBigImageVC.m */; };
+		474249371DD056920015A7BD /* QDBShowBigImageVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 474249351DD056920015A7BD /* QDBShowBigImageVC.xib */; };
 		475C5D9B1DBF461A00F2FD75 /* QDBCategoryCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 475C5D991DBF461A00F2FD75 /* QDBCategoryCell.m */; };
 		475C5D9C1DBF461A00F2FD75 /* QDBCategoryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 475C5D9A1DBF461A00F2FD75 /* QDBCategoryCell.xib */; };
+		47734D631DD01F8000793054 /* QDBCircleIndicatorView.m in Sources */ = {isa = PBXBuildFile; fileRef = 47734D621DD01F8000793054 /* QDBCircleIndicatorView.m */; };
 		4775EF151DCC7F6400BFE93C /* QDBPictureView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4775EF141DCC7F6400BFE93C /* QDBPictureView.m */; };
 		4775EF171DCC7F7000BFE93C /* QDBPictureView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4775EF161DCC7F7000BFE93C /* QDBPictureView.xib */; };
 		479317601DBDB25200790DA6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4793175F1DBDB25200790DA6 /* Assets.xcassets */; };
@@ -66,9 +69,14 @@
 		470AA7521DC2F8EC009EE1EC /* QDBRecommedTagCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QDBRecommedTagCell.xib; sourceTree = "<group>"; };
 		473ABACD1DCB52250074A45A /* QDBTopicViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QDBTopicViewController.h; sourceTree = "<group>"; };
 		473ABACE1DCB52250074A45A /* QDBTopicViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QDBTopicViewController.m; sourceTree = "<group>"; };
+		474249331DD056920015A7BD /* QDBShowBigImageVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QDBShowBigImageVC.h; sourceTree = "<group>"; };
+		474249341DD056920015A7BD /* QDBShowBigImageVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QDBShowBigImageVC.m; sourceTree = "<group>"; };
+		474249351DD056920015A7BD /* QDBShowBigImageVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QDBShowBigImageVC.xib; sourceTree = "<group>"; };
 		475C5D981DBF461A00F2FD75 /* QDBCategoryCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QDBCategoryCell.h; sourceTree = "<group>"; };
 		475C5D991DBF461A00F2FD75 /* QDBCategoryCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QDBCategoryCell.m; sourceTree = "<group>"; };
 		475C5D9A1DBF461A00F2FD75 /* QDBCategoryCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QDBCategoryCell.xib; sourceTree = "<group>"; };
+		47734D611DD01F8000793054 /* QDBCircleIndicatorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QDBCircleIndicatorView.h; sourceTree = "<group>"; };
+		47734D621DD01F8000793054 /* QDBCircleIndicatorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QDBCircleIndicatorView.m; sourceTree = "<group>"; };
 		4775EF131DCC7F6400BFE93C /* QDBPictureView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QDBPictureView.h; sourceTree = "<group>"; };
 		4775EF141DCC7F6400BFE93C /* QDBPictureView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QDBPictureView.m; sourceTree = "<group>"; };
 		4775EF161DCC7F7000BFE93C /* QDBPictureView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QDBPictureView.xib; sourceTree = "<group>"; };
@@ -222,6 +230,8 @@
 		4793178B1DBE0A5C00790DA6 /* Tool */ = {
 			isa = PBXGroup;
 			children = (
+				47734D611DD01F8000793054 /* QDBCircleIndicatorView.h */,
+				47734D621DD01F8000793054 /* QDBCircleIndicatorView.m */,
 			);
 			path = Tool;
 			sourceTree = "<group>";
@@ -245,6 +255,9 @@
 				470AA74B1DC2F4ED009EE1EC /* QDBRecommendTagsVC.m */,
 				473ABACD1DCB52250074A45A /* QDBTopicViewController.h */,
 				473ABACE1DCB52250074A45A /* QDBTopicViewController.m */,
+				474249331DD056920015A7BD /* QDBShowBigImageVC.h */,
+				474249341DD056920015A7BD /* QDBShowBigImageVC.m */,
+				474249351DD056920015A7BD /* QDBShowBigImageVC.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -525,6 +538,7 @@
 			files = (
 				470AA7491DBF632C009EE1EC /* QDBRecommendUserCell.xib in Resources */,
 				47A7B1541DC6E297009C257D /* QDBGuideView.xib in Resources */,
+				474249371DD056920015A7BD /* QDBShowBigImageVC.xib in Resources */,
 				47AF98021DC87706000AE898 /* QDBTopicCell.xib in Resources */,
 				4775EF171DCC7F7000BFE93C /* QDBPictureView.xib in Resources */,
 				47A7B1491DC33F5F009C257D /* QDBLoginRegisterVC.xib in Resources */,
@@ -595,6 +609,7 @@
 				47A7B14F1DC362A6009C257D /* QDBTextField.m in Sources */,
 				47C7DEF41DC9933400303552 /* NSDate+Extension.m in Sources */,
 				479317B31DBE0A5C00790DA6 /* QDBFriendTrendsViewController.m in Sources */,
+				47734D631DD01F8000793054 /* QDBCircleIndicatorView.m in Sources */,
 				479317BD1DBE0AE700790DA6 /* QDBConstant.m in Sources */,
 				479317B81DBE0A5C00790DA6 /* QDBMeViewController.m in Sources */,
 				470AA7531DC2F8EC009EE1EC /* QDBRecommedTagCell.m in Sources */,
@@ -610,6 +625,7 @@
 				47FDED2F1DC85E8B009DE94F /* QDBTopic.m in Sources */,
 				479317C01DBEFDB600790DA6 /* QDBNavgationController.m in Sources */,
 				479317B51DBE0A5C00790DA6 /* AppDelegate.m in Sources */,
+				474249361DD056920015A7BD /* QDBShowBigImageVC.m in Sources */,
 				470AA7481DBF632C009EE1EC /* QDBRecommendUserCell.m in Sources */,
 				470AA7441DBF61F4009EE1EC /* QDBUserModel.m in Sources */,
 				479317B11DBE0A5C00790DA6 /* UIView+Frame.m in Sources */,
@@ -729,6 +745,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.qiandai.QDBBaisibudejie;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -744,6 +761,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.qiandai.QDBBaisibudejie;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

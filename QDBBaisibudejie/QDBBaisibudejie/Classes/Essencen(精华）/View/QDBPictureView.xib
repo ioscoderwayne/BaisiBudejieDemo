@@ -12,6 +12,11 @@
             <rect key="frame" x="0.0" y="0.0" width="289" height="200"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="imageBackground" translatesAutoresizingMaskIntoConstraints="NO" id="t7U-p7-DNN" userLabel="logoImage">
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="ee1-E6-Eq9"/>
+                    </constraints>
+                </imageView>
                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="71c-Fm-YqR"/>
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="common-gif" translatesAutoresizingMaskIntoConstraints="NO" id="6RM-Ms-FKv">
                     <constraints>
@@ -19,8 +24,8 @@
                         <constraint firstAttribute="height" constant="31" id="naj-nT-jAL"/>
                     </constraints>
                 </imageView>
-                <button opaque="NO" alpha="0.80000000000000004" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Us1-ga-sv4">
-                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Us1-ga-sv4">
+                    <color key="backgroundColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="0.79794520547945202" colorSpace="calibratedRGB"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="35" id="HLu-yR-SSW"/>
                     </constraints>
@@ -30,11 +35,22 @@
                         <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
                 </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MdF-yb-bhw" customClass="QDBCircleIndicatorView">
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="80" id="8dM-fA-6an"/>
+                        <constraint firstAttribute="width" constant="80" id="t08-To-6NG"/>
+                    </constraints>
+                </view>
             </subviews>
-            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color key="backgroundColor" red="0.94509803921568625" green="0.94509803921568625" blue="0.94509803921568625" alpha="1" colorSpace="calibratedRGB"/>
             <constraints>
                 <constraint firstItem="6RM-Ms-FKv" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="2P4-pu-tJZ"/>
                 <constraint firstItem="71c-Fm-YqR" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="3kB-3A-sqx"/>
+                <constraint firstItem="MdF-yb-bhw" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="9qg-eq-vWR"/>
+                <constraint firstItem="t7U-p7-DNN" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="BhP-GA-7pe"/>
+                <constraint firstAttribute="trailing" secondItem="t7U-p7-DNN" secondAttribute="trailing" id="DfS-7A-cY6"/>
+                <constraint firstItem="MdF-yb-bhw" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="EgE-SM-FIo"/>
                 <constraint firstAttribute="trailing" secondItem="Us1-ga-sv4" secondAttribute="trailing" id="GWw-iM-ty5"/>
                 <constraint firstItem="Us1-ga-sv4" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Jx4-pU-XlQ"/>
                 <constraint firstItem="71c-Fm-YqR" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="NWu-cZ-65T"/>
@@ -42,10 +58,12 @@
                 <constraint firstAttribute="bottom" secondItem="Us1-ga-sv4" secondAttribute="bottom" id="Qht-1g-eUF"/>
                 <constraint firstAttribute="bottom" secondItem="71c-Fm-YqR" secondAttribute="bottom" id="S6j-5L-wGF"/>
                 <constraint firstAttribute="trailing" secondItem="71c-Fm-YqR" secondAttribute="trailing" id="Ttc-cN-0Kj"/>
+                <constraint firstItem="t7U-p7-DNN" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="lrT-sF-7gs"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <connections>
                 <outlet property="bgImageView" destination="71c-Fm-YqR" id="8mh-3H-3M7"/>
+                <outlet property="circleIndicatorView" destination="MdF-yb-bhw" id="p6c-NJ-dhx"/>
                 <outlet property="gitImageView" destination="6RM-Ms-FKv" id="vDg-om-2qN"/>
                 <outlet property="seeBigImagBtn" destination="Us1-ga-sv4" id="naF-Nw-E31"/>
             </connections>
@@ -54,6 +72,7 @@
     </objects>
     <resources>
         <image name="common-gif" width="31" height="31"/>
+        <image name="imageBackground" width="75" height="15"/>
         <image name="see-big-picture" width="19" height="19"/>
     </resources>
 </document>

@@ -61,6 +61,11 @@
 
 -(void)addChildVCs
 {
+    
+    QDBTopicViewController *pic = [[QDBTopicViewController alloc]init];
+    pic.title = @"图片";
+    pic.topicType = QDBTopicTypePicture;
+    [self addChildViewController:pic];
    
     QDBTopicViewController *allVc = [[QDBTopicViewController alloc]init];
     allVc.title = @"全部";
@@ -76,11 +81,6 @@
     voice.title = @"声音";
     voice.topicType = QDBTopicTypeVoice;
     [self addChildViewController:voice];
-    
-    QDBTopicViewController *pic = [[QDBTopicViewController alloc]init];
-    pic.title = @"图片";
-    pic.topicType = QDBTopicTypePicture;
-    [self addChildViewController:pic];
     
     QDBTopicViewController *word = [[QDBTopicViewController alloc]init];
     word.title = @"段子";

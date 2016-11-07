@@ -4,6 +4,7 @@ target 'QDBBaisibudejie' do
   pod 'AFNetworking'
   pod 'SVProgressHUD'
   pod 'SDWebImage'
-  pod ‘MJRefresh’
-  pod ‘MJExtension’
+  pod 'MJRefresh'
+  pod 'MJExtension'
+  pod 'DACircularProgress'	
 end

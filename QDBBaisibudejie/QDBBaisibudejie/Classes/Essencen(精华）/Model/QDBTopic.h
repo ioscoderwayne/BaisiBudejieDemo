@@ -45,4 +45,6 @@
 @property (nonatomic,assign,readonly) CGRect picViewF;
 //是否是大图
 @property (nonatomic,assign) BOOL isBigPicture;
+//当前图片下载进度
+@property (nonatomic,assign) CGFloat currentProgress;
 @end
