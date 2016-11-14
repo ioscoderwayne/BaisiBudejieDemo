@@ -11,7 +11,7 @@
 #import <UIImageView+WebCache.h>
 #import "QDBCircleIndicatorView.h"
 
-@interface QDBShowBigImageVC ()
+@interface QDBShowBigImageVC ()<UIScrollViewDelegate>
 - (IBAction)saveBtnClicked:(id)sender;
 
 - (IBAction)backBtnClicked;
@@ -33,8 +33,9 @@
     [imageView addGestureRecognizer:tap];
     [self.scrollView addSubview:imageView];
     
-//    self.scrollView.minimumZoomScale = 1.0;
-//    self.scrollView.maximumZoomScale = 2.0;
+    self.scrollView.delegate = self;
+    self.scrollView.minimumZoomScale = 1.0;
+    self.scrollView.maximumZoomScale = 2.0;
 
     self.imageView = imageView;
     
@@ -87,5 +88,16 @@
         //图片保存失败
         [SVProgressHUD showSuccessWithStatus:@"图片保存失败！"];
     }
+}
+
+#pragma mark - scrolldelegate
+-(void)scrollViewDidZoom:(UIScrollView *)scrollView
+{
+    QDBLog(@"缩放ing-----%f", scrollView.zoomScale);
+}
+
+-(UIView *)viewForZoomingInScrollView:(UIScrollView *)scrollView
+{
+    return self.imageView;
 }
 @end

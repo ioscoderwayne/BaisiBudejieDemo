@@ -6,5 +6,6 @@ target 'QDBBaisibudejie' do
   pod 'SDWebImage'
   pod 'MJRefresh'
   pod 'MJExtension'
-  pod 'DACircularProgress'	
+  pod 'DACircularProgress'
+  pod 'pop'
 end

@@ -35,10 +35,11 @@
 //显示大图控制器
 -(void)showBigImage
 {
+    QDBLog(@"-------%@=======%@",self.bgImageView.image,self.topic);
     QDBShowBigImageVC *showBig = [[QDBShowBigImageVC alloc]init];
     showBig.topic = self.topic;
-    UIWindow *keyWindow = [UIApplication sharedApplication].keyWindow;
-    [keyWindow.rootViewController presentViewController:showBig animated:YES completion:nil];    
+    [[UIApplication sharedApplication].keyWindow.rootViewController presentViewController:showBig animated:YES completion:nil];
+ 
 }
 
 -(void)setTopic:(QDBTopic *)topic

@@ -7,6 +7,7 @@
 //
 
 #import "QDBTabBar.h"
+#import "QDBPublishView.h"
 
 @interface QDBTabBar()
 @property (nonatomic,weak) UIButton *publishBtn;
@@ -21,6 +22,7 @@
         [self setBackgroundImage:[UIImage imageNamed:@"tabbar-light"]];
         //添加发布按钮
         UIButton *publishBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+        [publishBtn addTarget:self action:@selector(publishBtnClicked) forControlEvents:UIControlEventTouchUpInside];
         [publishBtn setBackgroundImage:[UIImage imageNamed:@"tabBar_publish_icon"] forState:UIControlStateNormal];
         [publishBtn setBackgroundImage:[UIImage imageNamed:@"tabBar_publish_click_icon"] forState:UIControlStateHighlighted];
         
@@ -29,6 +31,15 @@
 
     }
     return self;
+}
+
+-(void)publishBtnClicked
+{
+    QDBPublishView *publishView = [QDBPublishView publishView];
+    
+    UIWindow *window = [UIApplication sharedApplication].keyWindow;
+    
+    [window.rootViewController.view addSubview:publishView];
 }
 
 -(void)layoutSubviews

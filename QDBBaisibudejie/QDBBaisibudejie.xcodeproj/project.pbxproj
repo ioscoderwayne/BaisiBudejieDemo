@@ -49,6 +49,8 @@
 		47AF98011DC87706000AE898 /* QDBTopicCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 47AF97FF1DC87706000AE898 /* QDBTopicCell.m */; };
 		47AF98021DC87706000AE898 /* QDBTopicCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 47AF98001DC87706000AE898 /* QDBTopicCell.xib */; };
 		47C7DEF41DC9933400303552 /* NSDate+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 47C7DEF31DC9933400303552 /* NSDate+Extension.m */; };
+		47D7E1E51DD07732009B7DE2 /* QDBPublishView.m in Sources */ = {isa = PBXBuildFile; fileRef = 47D7E1E41DD07732009B7DE2 /* QDBPublishView.m */; };
+		47D7E1E71DD07744009B7DE2 /* QDBPublishView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 47D7E1E61DD07744009B7DE2 /* QDBPublishView.xib */; };
 		47FDED2F1DC85E8B009DE94F /* QDBTopic.m in Sources */ = {isa = PBXBuildFile; fileRef = 47FDED2E1DC85E8B009DE94F /* QDBTopic.m */; };
 		AAC5351222596514D5C68470 /* libPods-QDBBaisibudejie.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 650B4F02266D720CACE412B4 /* libPods-QDBBaisibudejie.a */; };
 /* End PBXBuildFile section */
@@ -130,6 +132,9 @@
 		47AF98001DC87706000AE898 /* QDBTopicCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QDBTopicCell.xib; sourceTree = "<group>"; };
 		47C7DEF21DC9933400303552 /* NSDate+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Extension.h"; sourceTree = "<group>"; };
 		47C7DEF31DC9933400303552 /* NSDate+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Extension.m"; sourceTree = "<group>"; };
+		47D7E1E31DD07732009B7DE2 /* QDBPublishView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QDBPublishView.h; sourceTree = "<group>"; };
+		47D7E1E41DD07732009B7DE2 /* QDBPublishView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QDBPublishView.m; sourceTree = "<group>"; };
+		47D7E1E61DD07744009B7DE2 /* QDBPublishView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QDBPublishView.xib; sourceTree = "<group>"; };
 		47FDED2D1DC85E8B009DE94F /* QDBTopic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QDBTopic.h; sourceTree = "<group>"; };
 		47FDED2E1DC85E8B009DE94F /* QDBTopic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QDBTopic.m; sourceTree = "<group>"; };
 		650B4F02266D720CACE412B4 /* libPods-QDBBaisibudejie.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-QDBBaisibudejie.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -387,6 +392,9 @@
 				47A7B1501DC6E285009C257D /* QDBGuideView.h */,
 				47A7B1511DC6E285009C257D /* QDBGuideView.m */,
 				47A7B1531DC6E297009C257D /* QDBGuideView.xib */,
+				47D7E1E31DD07732009B7DE2 /* QDBPublishView.h */,
+				47D7E1E41DD07732009B7DE2 /* QDBPublishView.m */,
+				47D7E1E61DD07744009B7DE2 /* QDBPublishView.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -540,6 +548,7 @@
 				47A7B1541DC6E297009C257D /* QDBGuideView.xib in Resources */,
 				474249371DD056920015A7BD /* QDBShowBigImageVC.xib in Resources */,
 				47AF98021DC87706000AE898 /* QDBTopicCell.xib in Resources */,
+				47D7E1E71DD07744009B7DE2 /* QDBPublishView.xib in Resources */,
 				4775EF171DCC7F7000BFE93C /* QDBPictureView.xib in Resources */,
 				47A7B1491DC33F5F009C257D /* QDBLoginRegisterVC.xib in Resources */,
 				479317C21DBF0F1D00790DA6 /* QDBFriendTrendsViewController.xib in Resources */,
@@ -614,6 +623,7 @@
 				479317B81DBE0A5C00790DA6 /* QDBMeViewController.m in Sources */,
 				470AA7531DC2F8EC009EE1EC /* QDBRecommedTagCell.m in Sources */,
 				4793182B1DBF383300790DA6 /* QDBRecommendViewController.m in Sources */,
+				47D7E1E51DD07732009B7DE2 /* QDBPublishView.m in Sources */,
 				479318391DBF418700790DA6 /* QDBRecommendTagModel.m in Sources */,
 				479317B71DBE0A5C00790DA6 /* QDBTabBar.m in Sources */,
 				47A7B1481DC33F5F009C257D /* QDBLoginRegisterVC.m in Sources */,
