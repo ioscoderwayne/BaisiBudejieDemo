@@ -88,6 +88,16 @@
             _picViewF = CGRectMake(picX, picY, picW, picH);
             //图片帖子
             _rowHeight = _rowHeight + picH + kTopicCellMargin;
+        }else if (_type == QDBTopicTypeVoice){
+            //声音帖子
+            CGFloat voiceX = kTopicCellMargin;
+            CGFloat voiceY = kTopictCellTextY +kTopicCellMargin+ textH +kTopicCellMargin;
+            CGFloat voiceW = maxW;
+            CGFloat voiceH = kScreenW * _height/_width;
+            
+            _voiceViewF = CGRectMake(voiceX, voiceY, voiceW, voiceH);
+            _rowHeight = _rowHeight + voiceH + kTopicCellMargin;
+
         }
         _rowHeight = _rowHeight +kTopictCellBottomBarH +kTopicCellMargin;
     }

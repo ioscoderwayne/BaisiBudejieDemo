@@ -22,6 +22,8 @@
 		47734D631DD01F8000793054 /* QDBCircleIndicatorView.m in Sources */ = {isa = PBXBuildFile; fileRef = 47734D621DD01F8000793054 /* QDBCircleIndicatorView.m */; };
 		4775EF151DCC7F6400BFE93C /* QDBPictureView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4775EF141DCC7F6400BFE93C /* QDBPictureView.m */; };
 		4775EF171DCC7F7000BFE93C /* QDBPictureView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4775EF161DCC7F7000BFE93C /* QDBPictureView.xib */; };
+		4782C2111DD9914900C39314 /* QDBVoiceView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4782C2101DD9914900C39314 /* QDBVoiceView.m */; };
+		4782C2131DD9915B00C39314 /* QDBVoiceView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4782C2121DD9915B00C39314 /* QDBVoiceView.xib */; };
 		479317601DBDB25200790DA6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4793175F1DBDB25200790DA6 /* Assets.xcassets */; };
 		479317B01DBE0A5C00790DA6 /* UIBarButtonItem+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 479317871DBE0A5C00790DA6 /* UIBarButtonItem+Extension.m */; };
 		479317B11DBE0A5C00790DA6 /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = 479317891DBE0A5C00790DA6 /* UIView+Frame.m */; };
@@ -82,6 +84,9 @@
 		4775EF131DCC7F6400BFE93C /* QDBPictureView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QDBPictureView.h; sourceTree = "<group>"; };
 		4775EF141DCC7F6400BFE93C /* QDBPictureView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QDBPictureView.m; sourceTree = "<group>"; };
 		4775EF161DCC7F7000BFE93C /* QDBPictureView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QDBPictureView.xib; sourceTree = "<group>"; };
+		4782C20F1DD9914900C39314 /* QDBVoiceView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QDBVoiceView.h; sourceTree = "<group>"; };
+		4782C2101DD9914900C39314 /* QDBVoiceView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QDBVoiceView.m; sourceTree = "<group>"; };
+		4782C2121DD9915B00C39314 /* QDBVoiceView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QDBVoiceView.xib; sourceTree = "<group>"; };
 		479317501DBDB25200790DA6 /* QDBBaisibudejie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QDBBaisibudejie.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4793175F1DBDB25200790DA6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		479317641DBDB25200790DA6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -290,6 +295,9 @@
 				4775EF131DCC7F6400BFE93C /* QDBPictureView.h */,
 				4775EF141DCC7F6400BFE93C /* QDBPictureView.m */,
 				4775EF161DCC7F7000BFE93C /* QDBPictureView.xib */,
+				4782C20F1DD9914900C39314 /* QDBVoiceView.h */,
+				4782C2101DD9914900C39314 /* QDBVoiceView.m */,
+				4782C2121DD9915B00C39314 /* QDBVoiceView.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -548,6 +556,7 @@
 				47A7B1541DC6E297009C257D /* QDBGuideView.xib in Resources */,
 				474249371DD056920015A7BD /* QDBShowBigImageVC.xib in Resources */,
 				47AF98021DC87706000AE898 /* QDBTopicCell.xib in Resources */,
+				4782C2131DD9915B00C39314 /* QDBVoiceView.xib in Resources */,
 				47D7E1E71DD07744009B7DE2 /* QDBPublishView.xib in Resources */,
 				4775EF171DCC7F7000BFE93C /* QDBPictureView.xib in Resources */,
 				47A7B1491DC33F5F009C257D /* QDBLoginRegisterVC.xib in Resources */,
@@ -621,6 +630,7 @@
 				47734D631DD01F8000793054 /* QDBCircleIndicatorView.m in Sources */,
 				479317BD1DBE0AE700790DA6 /* QDBConstant.m in Sources */,
 				479317B81DBE0A5C00790DA6 /* QDBMeViewController.m in Sources */,
+				4782C2111DD9914900C39314 /* QDBVoiceView.m in Sources */,
 				470AA7531DC2F8EC009EE1EC /* QDBRecommedTagCell.m in Sources */,
 				4793182B1DBF383300790DA6 /* QDBRecommendViewController.m in Sources */,
 				47D7E1E51DD07732009B7DE2 /* QDBPublishView.m in Sources */,

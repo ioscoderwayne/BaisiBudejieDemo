@@ -10,6 +10,7 @@
 #import "QDBTopic.h"
 #import <UIImageView+WebCache.h>
 #import "QDBPictureView.h"
+#import "QDBVoiceView.h"
 
 @interface QDBTopicCell()
 @property (weak, nonatomic) IBOutlet UIImageView *profileImage;
@@ -23,6 +24,8 @@
 
 @property (nonatomic,weak) QDBPictureView *picView;
 
+@property (nonatomic,weak) QDBVoiceView *voiceView;
+
 @end
 
 @implementation QDBTopicCell
@@ -35,6 +38,17 @@
         _picView = picView;
     }
     return _picView;
+}
+
+-(QDBVoiceView *)voiceView
+{
+    if (_voiceView == nil) {
+        QDBVoiceView *voiceView = [QDBVoiceView voiceView];
+        [self.contentView addSubview:voiceView];
+        _voiceView = voiceView;
+    }
+    
+    return _voiceView;
 }
 
 - (void)awakeFromNib {
@@ -64,6 +78,10 @@
         //图片帖子
         self.picView.topic = topic;
         self.picView.frame = topic.picViewF;
+    }else if(topic.type == QDBTopicTypeVoice) {
+        //声音帖子
+        self.voiceView.frame = topic.voiceViewF;
+        self.voiceView.topic = topic;
     }
     
 }

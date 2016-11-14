@@ -38,11 +38,19 @@
 /** 大图 */
 @property (nonatomic, copy) NSString *bigImage;
 
+/** 音频时长 */
+@property (nonatomic, assign) NSInteger voicetime;
+/** 播放次数 */
+@property (nonatomic, assign) NSInteger playcount;
+
+
 
 //附加属性
 @property (nonatomic,assign,readonly) CGFloat rowHeight;
 //图片viewFrame
 @property (nonatomic,assign,readonly) CGRect picViewF;
+//声音viewFrame
+@property (nonatomic,assign,readonly) CGRect voiceViewF;
 //是否是大图
 @property (nonatomic,assign) BOOL isBigPicture;
 //当前图片下载进度
