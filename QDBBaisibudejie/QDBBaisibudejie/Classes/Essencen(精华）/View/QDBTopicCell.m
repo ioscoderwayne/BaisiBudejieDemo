@@ -11,6 +11,7 @@
 #import <UIImageView+WebCache.h>
 #import "QDBPictureView.h"
 #import "QDBVoiceView.h"
+#import "QDBVideoView.h"
 
 @interface QDBTopicCell()
 @property (weak, nonatomic) IBOutlet UIImageView *profileImage;
@@ -25,6 +26,8 @@
 @property (nonatomic,weak) QDBPictureView *picView;
 
 @property (nonatomic,weak) QDBVoiceView *voiceView;
+
+@property (nonatomic,weak) QDBVideoView *videoView;
 
 @end
 
@@ -49,6 +52,17 @@
     }
     
     return _voiceView;
+}
+
+-(QDBVideoView *)videoView
+{
+    if (_videoView == nil) {
+        QDBVideoView *videoView = [QDBVideoView videoView];
+        [self.contentView addSubview:videoView];
+        _videoView = videoView;
+    }
+    
+    return _videoView;
 }
 
 - (void)awakeFromNib {
@@ -78,10 +92,33 @@
         //图片帖子
         self.picView.topic = topic;
         self.picView.frame = topic.picViewF;
+        
+        self.picView.hidden = NO;
+        self.voiceView.hidden = YES;
+        self.videoView.hidden = YES;
+
     }else if(topic.type == QDBTopicTypeVoice) {
         //声音帖子
         self.voiceView.frame = topic.voiceViewF;
         self.voiceView.topic = topic;
+        
+        self.picView.hidden = YES;
+        self.voiceView.hidden = NO;
+        self.videoView.hidden = YES;
+
+    }else if (topic.type == QDBTopicTypeVideo){
+        //视频帖子
+        self.videoView.frame =topic.videoViewF;
+        self.videoView.topic = topic;
+        
+        self.picView.hidden = YES;
+        self.voiceView.hidden = YES;
+        self.videoView.hidden = NO;
+    }else{
+        //段子帖子
+        self.picView.hidden = YES;
+        self.voiceView.hidden = YES;
+        self.videoView.hidden = YES;
     }
     
 }

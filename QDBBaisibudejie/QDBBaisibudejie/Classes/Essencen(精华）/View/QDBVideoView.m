@@ -1,25 +1,24 @@
 //
-//  QDBVoiceView.m
+//  QDBVideoView.m
 //  QDBBaisibudejie
 //
 //  Created by weixiaoyang on 2016/11/14.
 //  Copyright © 2016年 weixiaoyang. All rights reserved.
 //
 
-#import "QDBVoiceView.h"
+#import "QDBVideoView.h"
 #import "QDBTopic.h"
-#import "QDBShowBigImageVC.h"
 #import <UIImageView+WebCache.h>
+#import "QDBShowBigImageVC.h"
 
-@interface QDBVoiceView()
-@property (weak, nonatomic) IBOutlet UILabel *playTimeLabel;
-@property (weak, nonatomic) IBOutlet UILabel *playCountLabel;
-
+@interface QDBVideoView()
 @property (weak, nonatomic) IBOutlet UIImageView *bgImageView;
+@property (weak, nonatomic) IBOutlet UILabel *playTimeLable;
+@property (weak, nonatomic) IBOutlet UILabel *playCountLabel;
 
 @end
 
-@implementation QDBVoiceView
+@implementation QDBVideoView
 
 -(void)awakeFromNib
 {
@@ -42,7 +41,7 @@
 }
 
 
-+(instancetype)voiceView
++(instancetype)videoView
 {
     return [[[NSBundle mainBundle] loadNibNamed:NSStringFromClass(self) owner:nil options:0] lastObject];
 }
@@ -56,11 +55,11 @@
     
     //播放次数
     self.playCountLabel.text = [NSString stringWithFormat:@"%zd次",topic.playcount];
+    //播放时间
+    NSInteger minute = topic.videotime/60;
+    NSInteger second = topic.videotime%60;
     
-    //播放时长
-    NSInteger minute = topic.voicetime/60;
-    NSInteger sencond = topic.voicetime%60;
+    self.playTimeLable.text = [NSString stringWithFormat:@"%02zd:%02zd",minute,second];
     
-    self.playTimeLabel.text = [NSString stringWithFormat:@"%02zd:%02zd",minute,sencond];
 }
 @end

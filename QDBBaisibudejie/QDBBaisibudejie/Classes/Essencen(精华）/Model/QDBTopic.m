@@ -98,6 +98,16 @@
             _voiceViewF = CGRectMake(voiceX, voiceY, voiceW, voiceH);
             _rowHeight = _rowHeight + voiceH + kTopicCellMargin;
 
+        }else if (_type == QDBTopicTypeVideo){
+            //视频帖子
+            CGFloat videoX = kTopicCellMargin;
+            CGFloat videoY = kTopictCellTextY +kTopicCellMargin+ textH +kTopicCellMargin;
+            CGFloat videoW = maxW;
+            CGFloat videoH = kScreenW * _height/_width;
+            
+            _videoViewF = CGRectMake(videoX, videoY, videoW, videoH);
+            _rowHeight = _rowHeight + videoH + kTopicCellMargin;
+
         }
         _rowHeight = _rowHeight +kTopictCellBottomBarH +kTopicCellMargin;
     }
